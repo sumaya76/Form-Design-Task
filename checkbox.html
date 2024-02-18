@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Panel </title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .login-panel {
+        width: 300px;
+        margin: 50px auto;
+        background-color:cornflowerblue;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+        
+    }
+    .login-panel h2 {
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    .form-group input[type="checkbox"] {
+        margin-right: 5px;
+        
+    }
+    .btn {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="login-panel">
+    <h2>Login</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the <a href="#">terms and conditions</a>.</label>
+        </div>
+        <button type="submit" class="btn">Login</button>
+    </form>
+</div>
+
+</body>
+</html>
